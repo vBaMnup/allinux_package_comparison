@@ -35,7 +35,11 @@ def compare_packages(packages1, packages2):
     packages_dict2 = {p["name"]: (p["version"], p["release"]) for p in packages2}
     missing_in_1 = set(packages_dict2.keys()) - set(packages_dict1.keys())
     missing_in_2 = set(packages_dict1.keys()) - set(packages_dict2.keys())
-    newer_in_1 = [name for name in packages_dict1 if name in packages_dict2 and packages_dict1[name] > packages_dict2[name]]
+    newer_in_1 = [
+        name
+        for name in packages_dict1
+        if name in packages_dict2 and packages_dict1[name] > packages_dict2[name]
+    ]
     return list(missing_in_1), list(missing_in_2), newer_in_1
 
 
