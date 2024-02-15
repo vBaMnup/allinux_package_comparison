@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 import argparse
 import json
 from urllib import request, error
