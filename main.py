@@ -1,7 +1,7 @@
-from urllib import request, error
-import json
+#!/usr/bin/python3
 import argparse
-import sys
+import json
+from urllib import request, error
 
 
 def get_packages(branch, arch):
