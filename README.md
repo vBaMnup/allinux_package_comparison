@@ -3,7 +3,7 @@ This utility is for comparing sisyphus and p10 branch packages
 
 ## How to use:
 
-### Download main.py
+### Download script
 
 1. Download [script file](https://github.com/vBaMnup/allinux_package_comparison/releases/download/v0.1-beta/compare_packege) from repository
 2. Navigate to the directory of the downloaded file
@@ -16,7 +16,7 @@ chmod +x compare_packages
 ./compare_packages
 ```
 ### Note
-To filter by arch, use the -a -arch argument
+To filter by arch, use the "-a" "--arch"
 ```shell
 ./compare_packages --arch x86_64
 ```
